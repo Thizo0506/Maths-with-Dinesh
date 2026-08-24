@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // SCROLL REVEAL
 
 const revealElements = document.querySelectorAll(
-    ".hero-content, .ideas, .why-learn, .facebook, .about-card, .teaching-info"
+    ".hero-content, .ideas, .why-learn, .facebook, .contact, .about-card, .teaching-info"
 );
 
 const revealObserver = new IntersectionObserver(
