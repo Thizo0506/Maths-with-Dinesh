@@ -666,22 +666,40 @@ nav a.active {
         padding: 80px 6%;
     }
 
-    nav {
-        padding: 0 5%;
-        height: 60px;
-    }
+nav {
+    height: auto;
+    min-height: 70px;
 
-    .logo {
-        font-size: 16px;
-        white-space: nowrap;
-    }
+    padding: 10px 5%;
 
-    nav a {
-    margin-left: 8px;
+    gap: 10px;
+}
 
-    padding: 7px 4px;
+.logo {
+    font-size: 15px;
 
-    font-size: 14px;
+    line-height: 1.2;
+
+    max-width: 45%;
+}
+
+nav > div:last-child {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 4px;
+}
+
+nav a {
+    margin-left: 0;
+
+    padding: 7px 6px;
+
+    font-size: 13px;
+
+    white-space: nowrap;
 }
 
     .cards {
