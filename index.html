@@ -64,71 +64,172 @@
         }
 
 
-        /* HERO */
+       /* HERO */
 
-        .hero {
-            min-height: 100vh;
+.hero {
+    min-height: 100vh;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    display: flex;
+    align-items: center;
 
-            text-align: center;
-            padding: 100px 20px;
+    padding: 110px 8% 70px;
 
-            background:
-                radial-gradient(
-                    circle at 20% 30%,
-                    rgba(124, 58, 237, 0.25),
-                    transparent 35%
-                ),
-                radial-gradient(
-                    circle at 80% 70%,
-                    rgba(37, 99, 235, 0.20),
-                    transparent 35%
-                ),
-                #080914;
-        }
-
-        .hero-content {
-            max-width: 800px;
-        }
-
-        .hero h1 {
-            font-size: clamp(45px, 7vw, 75px);
-            line-height: 1.05;
-            margin-bottom: 25px;
-        }
-
-        .gradient {
-            background: linear-gradient(
-                90deg,
-                #a78bfa,
-                #3b82f6
-            );
-
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero p {
-            color: #aaaabb;
-            font-size: 18px;
-            max-width: 600px;
-            margin: auto;
-            margin-bottom: 35px;
-        }
-
-        .sinhala-tagline {
-    margin-top: -15px;
-    margin-bottom: 35px;
-
-    color: #b8a7ff;
-    font-size: 18px;
-    line-height: 1.8;
-    font-weight: 500;
+    background:
+        radial-gradient(
+            circle at 15% 40%,
+            rgba(124, 58, 237, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(37, 99, 235, 0.20),
+            transparent 35%
+        ),
+        #080914;
 }
 
+
+.hero-layout {
+    width: 100%;
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.15fr 0.85fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+
+.gradient {
+    background: linear-gradient(
+        90deg,
+        #a78bfa,
+        #3b82f6
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero p {
+    color: #aaaabb;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+
+/* SINHALA TAGLINE */
+
+.hero-sinhala {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    margin-top: 10px;
+
+    font-size: 30px;
+
+    line-height: 1.35;
+
+    font-weight: 600;
+
+    background: linear-gradient(
+        90deg,
+        #c4b5fd,
+        #60a5fa
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* HERO PHOTO */
+
+.hero-photo {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-photo-frame {
+    position: relative;
+
+    width: min(380px, 100%);
+
+    aspect-ratio: 4 / 5;
+
+    padding: 5px;
+
+    border-radius: 28px;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #3b82f6,
+        #6366f1
+    );
+
+    box-shadow:
+        0 25px 70px rgba(76, 60, 180, 0.30);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.hero-photo-frame:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 35px 80px rgba(76, 60, 180, 0.40);
+}
+
+
+.hero-photo-frame img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 23px;
+
+    border: 3px solid #080914;
+}
 
         /* BUTTON */
 
@@ -555,8 +656,22 @@
         grid-template-columns: 1fr;
     }
 
-    .hero {
-        padding-top: 90px;
+        .hero {
+        min-height: auto;
+
+        padding: 110px 6% 80px;
+    }
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
     }
 
     .hero h1 {
@@ -564,7 +679,20 @@
     }
 
     .hero p {
+        margin-left: auto;
+        margin-right: auto;
+
         font-size: 16px;
+    }
+
+    .hero-sinhala {
+        font-size: 26px;
+
+        align-items: center;
+    }
+
+    .hero-photo-frame {
+        width: min(320px, 85vw);
     }
 
     .sinhala-section-title {
@@ -694,9 +822,13 @@ body.page-loaded {
 
 
 
-    <!-- HERO -->
+<!-- HERO -->
 
-    <section class="hero">
+<section class="hero">
+
+    <div class="hero-layout">
+
+        <!-- LEFT SIDE -->
 
         <div class="hero-content">
 
@@ -708,22 +840,46 @@ body.page-loaded {
                 </span>
             </h1>
 
+
             <p>
-    Mathematics education for students from Grades 6–11,
-    supported by over 20 years of teaching experience.
-</p>
+                Mathematics education for students from Grades 6–11,
+                supported by over 20 years of teaching experience.
+            </p>
 
-<div class="sinhala-tagline">
-    ගණිතය සරලව<br>
-    ජීවිතයට ගණිතය<br>
-    සැමට ගණිතය
-</div>
 
-            <!-- Facebook link will be added later -->
+            <!-- SINHALA TAGLINE -->
+
+            <div class="hero-sinhala">
+
+                <div>ගණිතය සරලව</div>
+
+                <div>ජීවිතයට ගණිතය</div>
+
+                <div>සැමට ගණිතය</div>
+
+            </div>
 
         </div>
 
-    </section>
+
+        <!-- RIGHT SIDE — PHOTO -->
+
+        <div class="hero-photo">
+
+            <div class="hero-photo-frame">
+
+                <img
+                    src="Dinesh3.jpg"
+                    alt="Dinesh Jothirathna"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
