@@ -89,3 +89,56 @@ topButton.addEventListener("click", () => {
     });
 
 });
+
+// ==============================
+// ACTIVE NAVIGATION
+// ==============================
+
+const navLinks = document.querySelectorAll("nav a");
+
+const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
+
+const currentHash =
+    window.location.hash;
+
+
+navLinks.forEach((link) => {
+
+    const linkURL = new URL(
+        link.href,
+        window.location.origin
+    );
+
+    const linkPage =
+        linkURL.pathname.split("/").pop() || "index.html";
+
+    const linkHash =
+        linkURL.hash;
+
+
+    // CONTACT
+
+    if (
+        linkHash === "#contact" &&
+        currentHash === "#contact"
+    ) {
+
+        link.classList.add("active");
+
+    }
+
+
+    // HOME / ABOUT
+
+    else if (
+        !linkHash &&
+        linkPage === currentPage &&
+        !currentHash
+    ) {
+
+        link.classList.add("active");
+
+    }
+
+});
