@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Maths with Dinesh Jothirathna</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080914;
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            height: 70px;
+            padding: 0 8%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            background: rgba(8, 9, 20, 0.85);
+            backdrop-filter: blur(12px);
+
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+
+            border-bottom: 1px solid #222438;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #8b5cf6;
+        }
+
+        nav a {
+            color: #ccccd8;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #9d7cff;
+        }
+
+
+        /* MAIN */
+
+        main {
+            padding: 140px 8% 100px;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(124, 58, 237, 0.20),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 80% 80%,
+                    rgba(37, 99, 235, 0.15),
+                    transparent 35%
+                );
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .title h1 {
+            font-size: clamp(40px, 6vw, 65px);
+            margin-bottom: 15px;
+        }
+
+        .gradient {
+            background: linear-gradient(
+                90deg,
+                #a78bfa,
+                #3b82f6
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .title p {
+            color: #9999aa;
+            font-size: 18px;
+        }
+
+
+        /* ABOUT CARD */
+
+        .about-card {
+            max-width: 1000px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 350px 1fr;
+
+            gap: 50px;
+
+            align-items: center;
+
+            background: #111322;
+
+            border: 1px solid #25273b;
+
+            border-radius: 20px;
+
+            padding: 40px;
+        }
+
+
+        /* PHOTO PLACEHOLDER */
+
+        .photo {
+            height: 400px;
+
+            border-radius: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 80px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #2563eb
+                );
+        }
+
+
+        /* TEXT */
+
+        .content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: #b0b0bf;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+
+        /* BUTTON */
+
+        .button {
+            display: inline-block;
+
+            padding: 14px 25px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #7c3aed,
+                    #2563eb
+                );
+
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 30px
+                rgba(99, 102, 241, 0.3);
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+
+            padding: 25px;
+
+            background: #06070e;
+
+            color: #777788;
+
+            border-top: 1px solid #171827;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            nav {
+                padding: 0 5%;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .about-card {
+                grid-template-columns: 1fr;
+                padding: 25px;
+            }
+
+            .photo {
+                height: 300px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            Maths<span>.</span>
+        </div>
+
+        <div>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+
+        <div class="title">
+
+            <h1>
+                About
+                <span class="gradient">
+                    Dinesh Jothirathna
+                </span>
+            </h1>
+
+            <p>
+                Mathematics, teaching and helping students learn.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+
+            <!-- PHOTO -->
+
+            <div class="photo">
+
+                👨‍🏫
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="content">
+
+                <h2>
+                    Dinesh Jothirathna
+                </h2>
+
+                <p>
+                    Welcome to Maths with Dinesh Jothirathna.
+                </p>
+
+                <p>
+                    This space is dedicated to sharing
+                    mathematics lessons, explanations,
+                    problems and useful learning content
+                    for students.
+                </p>
+
+                <p>
+                    More information about Dinesh Jothirathna,
+                    his teaching experience and the subjects
+                    he teaches can be added here.
+                </p>
+
+
+                <!-- Facebook link will be added later -->
+
+                <a
+                    href="#"
+                    class="button"
+                >
+                    Visit Facebook Page
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Maths with Dinesh Jothirathna
+
+    </footer>
+
+
+</body>
+</html>
