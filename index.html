@@ -353,6 +353,18 @@
             margin: 0 auto 30px;
         }
 
+        .facebook-feed {
+    max-width: 900px;
+    margin: 0 auto 35px;
+
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
 
         /* FOOTER */
 
@@ -650,28 +662,59 @@
     </section>
 
 
-    <!-- FACEBOOK -->
+        <!-- FACEBOOK -->
 
-    <section class="facebook">
+<section class="facebook">
 
-        <h2>
-            Latest Maths Content
-        </h2>
+    <h2>
+        Latest Maths Content
+    </h2>
 
-        <p>
-            Follow the Facebook page for the latest
-            mathematics posts, lessons and updates.
-        </p>
+    <p>
+        Follow Maths with Dinesh Jothirathna on Facebook
+        for the latest Mathematics lessons, posts and updates.
+    </p>
 
-        <a
-    href="https://www.facebook.com/share/165PjYXPynb/"
-    class="button"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    View Facebook Page
-</a>
 
+    <div class="facebook-feed">
+
+        <div
+            class="fb-page"
+            data-href="https://www.facebook.com/people/Maths-with-Dinesh-Jothirathna-sir/61593917690497/"
+            data-tabs="timeline"
+            data-width="900"
+            data-height="600"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true">
+
+            <blockquote
+                cite="https://www.facebook.com/people/Maths-with-Dinesh-Jothirathna-sir/61593917690497/"
+                class="fb-xfbml-parse-ignore">
+
+                <a
+                    href="https://www.facebook.com/people/Maths-with-Dinesh-Jothirathna-sir/61593917690497/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Maths with Dinesh Jothirathna
+                </a>
+
+            </blockquote>
+
+        </div>
+
+    </div>
+
+
+    <a
+        href="https://www.facebook.com/people/Maths-with-Dinesh-Jothirathna-sir/61593917690497/"
+        class="button"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Facebook Page
+    </a>
+    
     </section>
 
 
@@ -684,6 +727,16 @@
 
     </footer>
 
+    <!-- FACEBOOK SDK -->
+
+<div id="fb-root"></div>
+
+<script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0">
+</script>
 
 </body>
 </html>
