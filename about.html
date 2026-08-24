@@ -200,6 +200,63 @@
         }
 
 
+.teaching-info {
+    max-width: 1000px;
+    margin: 70px auto 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #9999aa;
+    font-size: 17px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    padding: 30px;
+
+    background: #111322;
+
+    border: 1px solid #25273b;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: #6651b9;
+}
+
+.info-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #9999aa;
+    line-height: 1.7;
+}
+
+        
         /* FOOTER */
 
         footer {
@@ -236,6 +293,10 @@
             .photo {
                 height: 300px;
             }
+
+                .info-cards {
+        grid-template-columns: 1fr;
+    }
 
         }
 
@@ -355,6 +416,71 @@
 
 
         </div>
+
+
+        <!-- TEACHING INFORMATION -->
+
+        <section class="teaching-info">
+
+            <div class="section-title">
+
+                <h2>Teaching & Classes</h2>
+
+                <p>
+                    Helping students learn Mathematics
+                    with clear and simple explanations.
+                </p>
+
+            </div>
+
+
+            <div class="info-cards">
+
+                <div class="info-card">
+
+                    <div class="info-icon">📚</div>
+
+                    <h3>Grades 6–11</h3>
+
+                    <p>
+                        Mathematics lessons and support
+                        for students from Grades 6 to 11.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">🏫</div>
+
+                    <h3>School Teaching</h3>
+
+                    <p>
+                        Currently teaching Mathematics at
+                        Weragoda Vijayaba Secondary School.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">🏠</div>
+
+                    <h3>Private & Home Classes</h3>
+
+                    <p>
+                        Private physical classes and
+                        home teaching are also available.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
 
     </main>
 
